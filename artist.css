@@ -1,0 +1,53 @@
+html{
+    scroll-behavior: smooth;
+}
+body {
+    background-image: url(../ardoise.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header nav{
+    color:black;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 5px solid #6f6f6f;
+    
+}
+nav h1{
+    color: white;
+    font-family: 'calibri', serif;
+    font-size: 50px;
+    
+}
+
+.navigation{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+.hautdroite{
+    position: absolute;
+    align-items: center;
+    right: 40px;
+}   
+
+h1 {
+  text-align: center;
+  color: aliceblue;
+}
+
+.info {
+  color: aliceblue;
+  align-items: center;
+  margin-top: 20px;
+  text-align: center;
+  font-family: 'calibri';
+}
+
+.info-artist {
+    font-size: 0.7rem;
+}

@@ -1,0 +1,224 @@
+
+.hautdroite{
+    position: absolute;
+    align-items: center;
+    right: 40px;
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat', sans-serif;
+    background-image: url(ardoise.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+nav{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 5px solid #6f6f6f;
+    
+}
+nav h1{
+    color: white;
+    font-family: 'calibri', serif;
+    font-size: 50px;
+    
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(Coachella.jpg);
+    background-size: cover;
+    color: rgb(229, 233, 16);
+    padding: 150px;
+}
+header h1{
+    margin-top: 55px;
+    font-family: 'Playfair Display', serif;
+    font-size: 50px;
+}
+
+
+header div {    
+	background: black;
+	background-position: absolute; 
+    width: 100%;
+    height: 40px;
+    padding-top: -40px;
+	margin-top:-70px;
+    text-align: center;
+    
+    
+}
+
+h4{
+
+    color: rgb(230, 224, 224);
+    
+}
+    
+
+main {
+    color: black;
+    
+}
+
+input
+button{
+    margin-left: 100px;
+
+}
+
+.filter {
+    font-family: sans-serif;
+    color: white;
+    font-size: 16px;
+  }
+  
+  .filter-item {
+    margin: 0;
+    margin-left: 20px;
+    padding: 0;
+    color: rgb(0, 0, 0) ;
+  }
+  
+  
+  .filter-title {
+    margin-left: 5px;
+    width: 210px;
+    color: rgb(216, 216, 216) ;
+  }
+  
+  .filter-submit {
+    margin-bottom: 15px;
+    margin-left: 90px;
+    color: black;
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  
+  
+  .page-heading {
+    text-align: center;
+    
+  }
+  
+  
+  .artist-image {
+    background-color: gray;
+    background-image: url("");
+    background-position: center;
+    width: 100%;
+    padding: 20px;
+    height:200px; 
+    width:200px;
+  }
+  
+  .artist-image:hover {
+    background-size: 110%;
+  }
+  
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+  }
+  
+  .flex-container a {
+    text-decoration: none;
+    color: inherit
+  }
+  
+  .artist-card {
+    margin: 10px 10px;
+    text-align: center;
+  }
+  
+  .artist-info {
+    padding-top: 5px;
+    padding-left: 20px;
+    cursor: pointer;
+    width: 200px;
+  }
+  
+  .artist-title {
+    font-size: 1.2em;
+    
+  }
+  
+  .artist-year {
+    font-size: 0.8em;
+    opacity: 70%;
+  }
+  
+  /* Artist Page */
+  
+  .artist-page-style {
+    line-height: 1.7em;
+  }
+  
+  .artist-page-card {
+    margin: 10px 20px;
+  }
+  
+  .artist-page-info {
+    font-weight: bold
+  }
+  
+  .artist-page-info-data {
+    opacity: 80%;
+  }
+  
+  .artist-page-list {
+   margin-top: auto; 
+  }
+  
+  .artist-page-concert {
+    text-align: center;
+  }
+  
+  .goback-link {
+    cursor: pointer;
+  }
+  
+  @media screen and (max-width: 700px) {
+  
+    .row,
+    .navbar {
+      flex-direction: row;
+      
+    }
+  }
+
+  .row {
+    width: 100%;
+    
+  }
+  .block {
+    width: 350px;
+    float: left;
+    padding-inline-start: 60px;
+  }
+  
+  .artist-info {
+    padding-top: 5px;
+    cursor: pointer;
+    width: 240px;
+    height: 300px;
+    text-align: center;
+    
+  }
+  
+  h3 {
+    font-size: 1em;
+    
+  }
+  

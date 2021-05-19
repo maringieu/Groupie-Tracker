@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../artist.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navigation">
+            <h1>Groupie Tracker</h1>
+            <div class="hautdroite">
+                <form class="form-inline" action="/" method="POST">
+                    <a href="#" class="global-click"><i class="mdi mdi-home txt-white txt-dark-1 mr-3 font-s3"></i> Main
+                        Page
+                    </a>
+                </form>
+            </div>
+        </nav>
+    </header>
+    <h1>{{.Name}}</h1>
+    <div class="info">
+        <div class="info-artist">
+            <img src="{{.Image}}" class="image">
+            <h1>Creation Date: {{.CreationDate}} </h1>
+            <h1>First Album Released: {{.FirstAlbum}}</h1>
+        </div>
+
+    </div>
+
+</body>
+</body>
+
+</html>

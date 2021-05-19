@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Groupie tracker</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="/style1.css">
+</head>
+
+<body>
+
+
+  <nav>
+    <h1>Accueil</h1>
+    <div class="hautdroite">
+      <form role="search" method="get" id="recherche" class="recherche" action="">
+        <div>
+          <input type="search" id="site-search" name="q" aria-label="Search through site content"
+            placeholder="Rechercher...">
+          <button>Search</button>
+        </div>
+      </form>
+    </div>
+  </nav>
+
+  <header>
+    <h1>Groupie Tracker</h1><br><br>
+    <div>
+      <h4>Toute l'actualité de vos aritistes préférés : concerts, lieux et dates.</h4>
+    </div>
+  </header>
+</body>
+
+<main>
+  <br>
+  <br>
+  <section id="filter">
+
+    <form action="/" method="POST">
+
+      <div class="filter">
+        <lable class="filter-title">Filter by number of members :</lable>
+
+        <input type="checkbox" class="filter-item" id="1" name="mem1" value="1">
+        <label for="1"> 1 </label>
+        <input type="checkbox" class="filter-item" id="2" name="mem2" value="2">
+        <label for="2"> 2 </label>
+        <input type="checkbox" class="filter-item" id="3" name="mem3" value="3">
+        <label for="3"> 3 </label>
+        <input type="checkbox" class="filter-item" id="4" name="mem4" value="4">
+        <label for="4"> 4 </label>
+        <input type="checkbox" class="filter-item" id="5" name="mem5" value="5">
+        <label for="5"> 5 </label>
+        <input type="checkbox" class="filter-item" id="6" name="mem6" value="6">
+        <label for="6"> 6 </label>
+        <input type="checkbox" class="filter-item" id="7" name="mem7" value="7">
+        <label for="7"> 7 </label>
+        <input type="checkbox" class="filter-item" id="8" name="mem8" value="8">
+        <label for="8"> 8 </label>
+      </div>
+      <br>
+      <br>
+
+      <div class="filter">
+        <label class="filter-title" for="location-filter">Filter by locations of concerts :</label>
+        <input type="text" class="filter-item" id="location-filter" name="location-filter" placeholder="Location"
+          list="location-name">
+
+      </div>
+
+      <br>
+      <button type="submit" class="filter-submit"> Filter </button>
+      <br>
+    </form>
+
+  </section>
+  </div class="flex-container " id="artist-container">
+  <div class="row">
+    {{range .}}
+    <div class="block" id="{{.ID}}">
+      <div class="artist-info">
+        <!-- <form action="/single_artist" method="POST"> -->
+          <button name="bouton">
+            <input type="hidden" name="marin" >
+            <a href="/artist/{{.ID}}">
+              <img src="{{.Image}}">
+              <h3 style="color: black;">{{.Name}}</h3>
+            </a>
+          </button>
+        <!-- </form> -->
+      </div>
+    </div>
+    {{end}}
+  </div>
+  </div>
+</main>
+
+</html>
